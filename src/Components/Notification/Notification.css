@@ -1,0 +1,111 @@
+
+:root{
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+    }
+    
+    .N-container{
+        width : 100%;
+        background-color: var(--White);
+        max-width: 40.625rem;
+        height : auto;
+        padding : 10px 15px; 
+        border-radius: 10px;
+        margin-top : 4.5rem;
+    }
+    .bold{
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+    .read{
+        color : rgba(8, 7, 7, 0.6);
+        cursor : pointer;
+    }
+    .N-messages:hover{
+      cursor: pointer;
+    }
+    .Notifications:checked{
+    background-color: var(--White);
+    transition: background-color 0.3s ease;
+    }
+    .Notifications{
+    height : 75px;
+    background-color: var(--Very-light-grayish-blue);
+    display: flex;
+    padding : 10px;
+    margin-bottom: 8px;
+    }
+    .Notifications.clicked {
+        background-color: white;
+        transition : background-color 0.5s ease;
+    }
+    .first-N/*image*/{
+        height: 50px;
+        margin-right: 14px;
+    }
+    .semi-bold{
+        font-weight: 700;
+    }
+    .N-text p:nth-last-of-type(1){
+    color :  var(--Grayish-blue);
+    }
+    .blue{
+        color : var(--Blue);
+        font-weight : 700;
+    }
+    .dot{
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        border-radius: 50%;
+        margin-left: 5px;
+    }
+    @media(max-width: 680px) {
+        .bold{
+            font-weight: 700;
+            font-size : 2rem;
+        }
+        .read{
+            font-size : 1.5rem;
+            margin-right : 10px;
+        }
+        .Notifications{
+            height : 100px;
+        }
+        .first-N{
+            height : 60px;
+        }
+        .text{
+            font-size : 1.2rem;
+        }
+    }
+    @media(max-width : 470px){
+        .N-container{
+            margin-top : 0;
+        }
+        .bold{
+            font-weight: 700;
+            font-size : 1.8rem;
+        }
+        .read{
+            font-size : 1.2rem;
+            margin-right : 10px;
+        }
+        .Notifications{
+            height : 90px;
+        }
+        .first-N{
+            height : 50px;
+        }
+        .text{
+            font-size : 1.1rem;
+        }
+    }
+    
